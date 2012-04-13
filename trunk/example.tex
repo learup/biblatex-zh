@@ -1,0 +1,33 @@
+%% $Id$
+% Sample for showing the biblatex-zh's result.
+% Copyright (C) 2012, LiTuX, all wrongs reserved.
+
+\documentclass[UTF8]{ctexart}
+
+\usepackage[style=GBT7714-2005N]{biblatex}
+\ExecuteBibliographyOptions{
+	sorting=none,
+	sortcase=false,
+	backend=bibtex,
+	language=chinese,
+}
+
+\addbibresource{ref}
+
+\title{biblatex 中文化及 GB/T 7714-2005 支持测试}
+\author{LiTuX \and ClerkMa}
+
+\begin{document}
+\maketitle
+
+本文档用于展示 biblatex-zh 项目的成果：biblatex 本地化（中文化）支持，
+以及 biblatex 版本国家标准 GB/T 7714-2005 的实现及效果。
+
+biblatex-zh(http://code.google.com/p/biblatex-zh) 是进行 biblatex 中文化和
+制作文后参考文献著录规则国家标准 GB/T 7714-2005 的 biblatex 实现的项目。
+
+\nocite{*}
+\printbibliography
+
+\end{document}
+
